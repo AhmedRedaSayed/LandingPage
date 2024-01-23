@@ -1,0 +1,459 @@
+*
+{
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #0078ff;
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #f1f1f1;
+}
+
+nav h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+
+}
+
+nav .nav-item {
+    padding: 5px;
+
+}
+
+.nav-item a {
+    color: white;
+    transition: underline 0.5s;
+}
+
+.dropdown-menu a {
+    color: black;
+    transition: color 0.5s;
+
+}
+.live-border:hover
+{
+    animation: live;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes live
+{
+    0% {
+        border-bottom: 2px solid #fff; width: 0%;
+    }
+    5% {
+        border-bottom: 2px solid #fff; width: 5%;
+    }
+    15% {
+        border-bottom: 2px solid #fff; width: 15%;
+    }
+    25% {
+        border-bottom: 2px solid #fff; width: 25%;
+    }
+    50% {
+        border-bottom: 2px solid #fff; width: 50%;
+    }
+    65% {
+        border-bottom: 2px solid #fff; width: 65%;
+    }
+    75% {
+        border-bottom: 2px solid #fff; width: 75%;
+    }
+
+}
+
+header {
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0.9;
+}
+
+.header-content h1 {
+    color: white;
+    font-size: 4.5rem;
+}
+
+.header-content p {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.header-content p::after {
+    content: " |";
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes typing {
+    0% {
+        content: " |"
+    }
+
+    3% {
+        content: " D |"
+    }
+
+    6% {
+        content: " De |"
+    }
+
+    9% {
+        content: " Dev |"
+    }
+
+    12% {
+        content: " Deve |"
+    }
+
+    15% {
+        content: " Deveo |"
+    }
+
+    18% {
+        content: " Deveol |"
+    }
+
+    21% {
+        content: "  Deveolp |"
+    }
+
+    24% {
+        content: " Deveolpe |"
+    }
+
+    27% {
+        content: " Deveolper |"
+    }
+
+    30% {
+        content: " Deveolpe |"
+    }
+
+    33% {
+        content: " Deveolp |"
+    }
+
+    36% {
+        content: " Deveol |"
+    }
+
+    39% {
+        content: " Deveo |"
+    }
+
+    42% {
+        content: " Deve |"
+    }
+
+    45% {
+        content: " Dev |"
+    }
+
+    48% {
+        content: " De |"
+    }
+
+    51% {
+        content: " Des |"
+    }
+
+    54% {
+        content: " Desi|"
+    }
+
+    57% {
+        content: " Desig |"
+    }
+
+    60% {
+        content: " Design |"
+    }
+
+    63% {
+        content: " Designe  |"
+    }
+
+    66% {
+        content: " Designer |"
+    }
+
+    69% {
+        content: "  |"
+    }
+
+    72% {
+        content: "  F |"
+    }
+
+    75% {
+        content: " Fr |"
+    }
+
+    78% {
+        content: " Fre |"
+    }
+
+    81% {
+        content: "  Free |"
+    }
+
+    84% {
+        content: "  Freel |"
+    }
+
+    87% {
+        content: "  Freela |"
+    }
+
+    90% {
+        content: "  Freelan |"
+    }
+
+    93% {
+        content: " Freelance |"
+    }
+
+    96% {
+        content: "  Freelancer|"
+    }
+
+    100% {
+        content: " Freelancer. |"
+    }
+}
+
+
+.line-5 {
+    width: 40px;
+    height: 5px;
+    background-color: var(--main-color);
+    margin: auto;
+    margin-bottom: 20px;
+}
+.about-photo img
+{
+ width: 40%;
+}
+.about-info h5
+{
+    font-size: 2rem;
+    position: relative;
+}
+.about-info h5::before
+{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: var(--main-color);
+    width: 100px;
+    bottom: -10;  
+   
+}
+#Serices .border-5
+{
+    border: solid  10px !important;
+    transition: color 5s;
+}
+#Services .works .border:hover
+{
+    background-color: #0078ff;
+    color: white;
+
+    
+}
+ .clients
+{
+    background-image: url(../images/post-3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+.layout
+{
+    
+    background-color: rgba(3, 138, 255,0.6);
+
+    
+}
+.clients-feed
+{
+    color: white;
+}
+ .clients span
+{
+    font-size: 2rem;
+}
+
+#portfolio img
+{
+    transition: transform 0.5s;
+    
+}
+#portfolio .port-box 
+{
+    overflow: hidden;
+}
+#portfolio .port-box img:hover
+{
+    
+    transform: scale(1.1);
+
+}
+.port-icon 
+{
+    font-size: 3rem;
+
+}
+.port-icon i
+{
+    color: var(--main-color);
+
+}
+.port-box span
+{
+    color: var(--main-color);
+
+}
+.slider
+{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+.slider-layer
+{
+    background-color: rgba(3, 138, 255,0.6);
+
+    
+}
+.carousel-indicators button
+{
+    width: 100px;
+    height: 100px;
+    
+}
+.card a
+{
+    text-decoration: none;
+    color: #1e1e1e;
+    transition: color 0.5s;
+}
+.card a:hover
+{
+    color: var(--main-color);
+}
+.card-footer img
+{
+    width: 30px;
+}
+ #contact
+{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment:fixed;
+  
+   
+}
+
+.layerr
+{
+   
+   
+    background-color: rgba(3, 138, 255,0.6);
+    width: 100%;
+    height: 100%;
+    
+}
+#Contact .messages h5
+{
+   font-size: 2rem;
+   color: #1e1e1e;
+   position: relative;
+}
+.messages h5::before
+{
+    content: '';
+    border-bottom: solid 3px  #0078ff;
+    position: absolute;
+    bottom: -5;
+    left: 0%;
+    width: 100px;
+    
+}
+.messages button
+{
+ 
+  font-size: 1.2rem;
+  border-radius: 5rem;
+  line-height: 1.5;
+  background-color: #0078ff;
+  color: white;
+  padding: 10px 10px;
+  border: var(--main-color);
+ 
+}
+.messages button:hover
+{
+    opacity: 0.9;
+    border: #cde1f8;
+
+}
+.contact-info li
+{
+   list-style-type: none;
+
+}
+.contact-info .list-icons span
+{
+    color: #0078ff;
+}
+.contact-info .social a
+{
+    color: #1e1e1e;
+    transition: color 0.5s;
+}
+.icon-circle 
+{
+    
+    border-radius: 50%;
+    border: 5px solid var(--main-color);
+    margin:  auto;
+    text-align: center;
+    padding: 5px;
+    transition:0.5s;
+    
+}
+.social .icon-circle:hover
+{
+    background-color: #0078ff;
+}
+.social li a:hover
+{
+    color: #fff;
+}
+.clients .icon-circle
+{
+    color: gray;
+}
+
